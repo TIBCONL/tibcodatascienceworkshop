@@ -24,9 +24,9 @@ Additional info can be found the TIBCO Community:
 [TOC]
 
 
-1. Guided Lab: Getting started 
+## Guided Lab: Getting started 
 
-**Problem Statement**
+### Problem Statement
 
 You work as a citizen data scientist for an insurance company called Augment Insurance. Augment Insurance sells home loans. The company wants to offer loans to people that are creditworthy to mitigate it's risk by determining if an applicant will default on its loan. The challenge is that the company has a hard time determining who to offer a loan and who's loan request should be rejected.
 
@@ -60,10 +60,10 @@ Along the way we'll explore TIBCO Data Science and you'll get familiar with vari
 Feel free to ask any questions you might have!
 
 
-
+### Task 1. Explore and prepare TIBCO Data Science
 1. Explore and prepare TIBCO Data Science
-1. Log in to [TIBCO Data Science](http://tstrainingdemo.tibco.com/) using the credentials that were provided to you by opening a browser and navigate to: [http://tstrainingdemo.tibco.com/](http://tstrainingdemo.tibco.com/)
-2. Click on the gear icon in the upper right corner of the home page and customize the page layout by selecting and reordering widgets.
+2. Log in to [TIBCO Data Science](http://tstrainingdemo.tibco.com/) using the credentials that were provided to you by opening a browser and navigate to: [http://tstrainingdemo.tibco.com/](http://tstrainingdemo.tibco.com/)
+3. Click on the gear icon in the upper right corner of the home page and customize the page layout by selecting and reordering widgets.
 
 
 
@@ -100,7 +100,7 @@ Feel free to ask any questions you might have!
 At this moment you've performed the required steps to start your Data Science project. You've created a space for your project (a workspace), personalized your workspace, invited (several) team member with which you can collaborate and created several milestones with which you can indicate the current status of your data science project. At this point you're all set to create the data science workflow. 
 
 
-
+### Task 2. Create a data science workflow
 2. Create a data science workflow
 1. In your workspace, go to the work files tab and create a new workflow with Hadoop as data source. \
 Name it ‘[Your initials] Credit Worthiness’.
@@ -219,6 +219,7 @@ Now let's introduce various ML operators to find our best predictive model.
 In your flow you've modelled 3 Machine Learning operators. Each of the ML operators have been configured to predict the value for 'PREVIOUSLY_DEFAULTED' based on all other parameters (columns) in the data except USER_ID. Each ML operator uses a different algorithm to arrive at a predictive model. In order to assess which model is best you've introduced the ROC operator. On the ROC curve you've specified to predict 'Yes' which means that we predict if someone would default on their loan. ROC stands for Receiving Operator Characteristics curve which is tool that can help evaluate the model quality. Based on its output we can decide our winning model.
 
 
+### Task 3. Review model performance
 
 3. Review model performance
 
@@ -244,7 +245,7 @@ To assess the quality based on metrics we can use the AUC metric. This stands fo
 We have trained 3 models and ran the models against the unseen transactions in the 'Test Data' set. The results for correctly predicted results have been plotted in the ROC curve. Based on the results in the ROC curve and using the AUC metric you could have concluded that the Logistic Regression model is the best performing model. 
 
 
-
+### Task 4. Export model for Real Time scoring
 4. Export model for Real Time scoring
 1. We now have a predictive model that we can use to score 'new' loan requests which will help the company to decide if it should grant a loan (or not). We can use the model to score 'batches' of loan requests at once  in TIBCO Data Science or we can score new loan requests in real time using TIBCO Data Streams (which we've seen in the demo).
 2. In either case we can export the model from TIBCO Data Science to a portable format for use in either tool. In this case we'll export the model to a PMML file. This stands for Predictive Model Markup Language and it's a industry standard for model sharing. A PMML file contains a model which can be used for (realtime) scoring and can be used in TIBCO Spotfire Data Streams.
