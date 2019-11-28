@@ -21,7 +21,16 @@ Additional info can be found the TIBCO Community:
 
 
 **Table of Contents**
-[TOC]
+   * [Workshop TIBCO Data Science](#workshop-tibco-data-science)
+      * [Lab Guide](#lab-guide)
+         * [Authors](#authors)
+      * [Guided Lab: Getting started](#guided-lab-getting-started)
+         * [Problem Statement](#problem-statement)
+         * [Task 1. Explore and prepare TIBCO Data Science](#task-1-explore-and-prepare-tibco-data-science)
+         * [Task 2. Create a data science workflow](#task-2-create-a-data-science-workflow)
+         * [Task 3. Review model performance](#task-3-review-model-performance)
+         * [Task 4. Export model for Real Time scoring](#task-4-export-model-for-real-time-scoring)
+      * [Summary](#summary)
 
 
 ## Guided Lab: Getting started 
