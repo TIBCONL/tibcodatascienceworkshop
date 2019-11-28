@@ -262,7 +262,8 @@ We have trained 3 models and ran the models against the unseen transactions in t
 
 6. Congratulations, you've now successfully completed all Labs!
 
-**[What happened]**
+## Summary 
+
 Let's recap what we've done.
 1. First you've prepared your project environment (workspace) for this data science project
 2. Next we've loaded our data from Hadoop.
