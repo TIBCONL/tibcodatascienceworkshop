@@ -19,7 +19,6 @@ Additional info can be found the TIBCO Community:
 
 </details>
 
-
 **Table of Contents**
    * [Workshop TIBCO Data Science](#workshop-tibco-data-science)
       * [Lab Guide](#lab-guide)
