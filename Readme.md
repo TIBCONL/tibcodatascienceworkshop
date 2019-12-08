@@ -19,9 +19,8 @@ Additional info can be found the TIBCO Community:
 
 </details>
 
-[TOC]
+[Table Of Contents]
 
-1. Guided Lab: Getting started 
 
 ### Problem Statement
 
@@ -324,5 +323,22 @@ Let's recap what we've done.
 4. You've applied the best performing model in batch against new loan requests.
 6. And at last we've exported the winning model to a format which can be used to in TIBCO Spotfire Data Streams for real time scoring.
 
-
 Congratulations, you've now successfully completed all Labs!
+
+## Additional Resources
+If you'd like to learn more about TIBCO Data Science please consult these resources: 
+
+[TIBCO Data Science Website](https://www.tibco.com/products/data-science)
+
+[TIBCO Data Science Community](https://community.tibco.com/products/tibco-data-science)
+
+[TIBCO Community Data Science - Customer Orientation](https://community.tibco.com/wiki/tibcor-data-science-team-studio-customer-orientation)
+
+Can't find the answer you're looking for?
+Then please contact your instructors:
+
+[Steven van der Kroft](mailto:svanderk@tibco.com) 
+
+[Alain Martens](mailto:amartens@tibco.com)
+
+Thank you for participating!!!
