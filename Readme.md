@@ -199,8 +199,6 @@ Let's move on to introduce various ML operators to find our best predictive mode
     2. Logistic Regression
     3. Gradient Boosting Classification
 
-@TODO: Add some short description about these models.
-
 7. Link the operators to the 'Train Data' node and configure the model nodes with 'Dependent Column': 'class' (which contains the values good or bad) and for 'Select Columns': 'All columns'.
 
 ![alt_text](images/image7.png "image_tooltip")
