@@ -20,7 +20,18 @@ Additional info can be found the TIBCO Community:
 </details>
 
 [Table Of Contents]
-
+   * [Workshop TIBCO Data Science](#workshop-tibco-data-science)
+      * [Introduction](#introduction)
+         * [Authors](#authors)
+         * [Problem Statement](#problem-statement)
+      * [Lab Guide](#lab-guide)
+         * [Prepare your TIBCO Data Science Workspace](#prepare-your-tibco-data-science-workspace)
+         * [Perform data preparation](#perform-data-preparation)
+         * [Create various data science models](#create-various-data-science-models)
+         * [Apply the best predictive model to new loan requests](#apply-the-best-predictive-model-to-new-loan-requests)
+         * [Export model for Real Time scoring](#export-model-for-real-time-scoring)
+      * [Summary](#summary)
+      * [Additional Resources](#additional-resources)
 
 ### Problem Statement
 
