@@ -23,7 +23,7 @@ Additional info can be found the TIBCO Community:
 
 1. Guided Lab: Getting started 
 
-**Problem Statement**
+### Problem Statement
 
 You work as a citizen data scientist for an insurance company called Augment Insurance. Augment Insurance sells home loans. The company wants to offer loans to people that are creditworthy to mitigate it's risk by determining if an applicant will default on its loan. The challenge is that the company has a hard time determining who to offer a loan and who's loan request should be rejected.
 
