@@ -69,19 +69,24 @@ In this chapter you'll complete your user profile and prepare workspace to conta
 1. Log in to [TIBCO Data Science](http://tstrainingdemo.tibco.com/) using the credentials that were provided to you by opening a browser and navigate to: [http://tstrainingdemo.tibco.com/](http://tstrainingdemo.tibco.com/)
 2. Click on the gear icon in the upper right corner of the home page and customize the page layout by selecting and reordering widgets.
 
-![alt_text](images/image19.png "image tooltip")
+<!--![alt_text](images/image19.png "image tooltip")-->
+<img src=images/image19.png width="100%">
 
 3. Click on your name (top right corner), navigate to Your Profile > Edit Your Profile, add a profile picture, and enter your title and department info. 
 
-![alt_text](images/image11.png "image_tooltip")
+<!--![alt_text](images/image11.png "image_tooltip")-->
+<img src=images/image11.png width="100%">
 
 4. Create a non-public Workspace named [Your name] Analytics Project.
 
-![alt_text](images/image4.png "image_tooltip")
+<!--![alt_text](images/image4.png "image_tooltip")-->
+<img src=images/image4.png width="50%">
 
-![alt_text](images/image27.png "image_tooltip")
+<!--![alt_text](images/image27.png "image_tooltip")-->
+<img src=images/image27.png width="50%">
 
-![alt_text](images/image15.png "image_tooltip")
+<!--![alt_text](images/image15.png "image_tooltip")-->
+<img src=images/image15.png width="50%">
 
 5. Add your fellow trainees as members of your workspace.			
 6. In the overview of your workspace click on 'dismiss' and on the right click to open 'Workspace settings' 
@@ -91,7 +96,8 @@ For example: \
 "This project is for Augment Insurance.
 With this project we'll predict the creditworthiness of loan requests."
 
-![alt_text](images/image35.png "image_tooltip")
+<!--![alt_text](images/image35.png "image_tooltip")-->
+<img src=images/image35.png width="80%">
 
 **[What happened]** \
 At this moment you've performed the required steps to start your Data Science project. You've created a space for your project (a workspace), personalized it, invited (several) team member with which you can collaborate and added a description about your project. At this point you're all set to create the data science workflow. 
@@ -101,18 +107,22 @@ In this chapter you'll create a workfile (which will contains your data science 
 
 1. As we're entering a different stage in our project we're update the stage of our workspace to the 'transform' stage. This indicates that we're in the data transformation/data prep stage of our project. To do so, click on 'update stage' in the overview tab of our workspace. For stage select 'Transform'. 
 
-![alt_text](images/image33.png "image_tooltip")
+<!--![alt_text](images/image33.png "image_tooltip")-->
+<img src=images/image33.png width="100%">
 
 2. In your workspace, go to the work files tab and create a new workflow with Hadoop as data source. \
 Name it ‘[Your name] Credit Worthiness’.
 
-![alt_text](images/image16.png "image_tooltip")
+<!--![alt_text](images/image16.png "image_tooltip")-->
+<img src=images/image16.png width="100%">
 
-![alt_text](images/image12.png "image_tooltip")
+<!--![alt_text](images/image12.png "image_tooltip")-->
+<img src=images/image12.png width="100%">
 
 3. We're now about to add our data to the data science project. Our source data in contained in 2 different files. We have data about historical credit requests and personal data about the requestors. For these loans we know if the requests are good or bad in terms of credit worthiness. So, to start open your workflow, go to the Data tab (on the left sidebar). Click on Data Sources and navigate to <_Hadoop, TS_TrainingDemo, Alain, TDSworkshop_> and drag the file called  'credit_data_historical.csv' on the canvas. Do the same for the file 'credit_personal_data.csv'
 
-![alt_text](images/image6.png "image_tooltip")
+<!--![alt_text](images/image6.png "image_tooltip")-->
+<img src=images/image6.png width="100%">
 
 When the text under the node is in red, this means that the configuration of the node is incorrect. To fix this, double click on the node. This will open the configuration panel for the node on the right of the screen. You'll some options marked in yellow. This tells you that this is the place where some input form you is required. In this case, you'll need to validate if the Hadoop file structure has been parsed correctly. Please validate that the structure is ok before confirming. Also note that 1 of the last columns is called 'class'. This column tells us if the loan is good or bad. We'll be using this column as dependent column later.
 
@@ -120,7 +130,8 @@ Fix the other data source in the same manner. If done properly, the red text und
 
 4. Now we'll join the 2 data sources using the id column present in both files. To do so, go to the operators tab (on the left sidebar), find the join operator and drag it onto the canvas. Next connect both files to the join operator. You can do this by hovering over the file nodes on the canvas, when you see a gray pipe on the right, click and hold, then release it on the join operator. 
 
-![alt_text](images/image37.png "image_tooltip")
+<!--![alt_text](images/image37.png "image_tooltip")-->
+<img src=images/image37.png width="50%">
 
 5. Double click on the join operator to complete the configuration.
 
@@ -128,26 +139,31 @@ Click on 'define join operations' and join the 2 files based on the 'id' fields 
 
 Choose to add all fields from both files. This should result in a data table consisting of 25 fields.
 
-![alt_text](images/image2.png "image_tooltip")
+<!--![alt_text](images/image2.png "image_tooltip")-->
+<img src=images/image2.png width="100%">
 
 6. Now that we've joined the data we'll introduce a summary statistics operator. This will help us inspect the quality of the data and let's us decide what to do next. In the Operators tab (on the left sidebar) find the Summary Statistics operator and drag it on the canvas and connect it to the join node and configure it by selecting all columns.
 
-![alt_text](images/image40.png "image_tooltip")
+<!--![alt_text](images/image40.png "image_tooltip")-->
+<img src=images/image40.png width="50%">
 
 Next click on 'Run' to execute this workflow. 
 
 7. When it's finished running, click on the Summary Statistics node to see its results.
 
-![alt_text](images/image17.png "image_tooltip")
+<!--![alt_text](images/image17.png "image_tooltip")-->
+<img src=images/image17.png width="100%">
 
 (Tip: You can use the icons just above the results to enlarge the results window)
 
 8. When you inspect the results you'll notice a couple of interesting findings. You'll find irrelevant columns and  impossible values. The count column tells us that there are 1000 rows in the data. The unique column tells us how many unique values there are for each column in the data. We see that the description has 1000 unique values, next to that we see that there is 1 unique value for the internal column. Both these columns will not add value during the model building phase. Therefore we'll remove these columns in the next step. When we look at the min value column we see that the column 'credit amount' has a minimum value of -1000000. A negative value for requested credit amount is obviously not possible and is therefore a mistake in the data. For that reason we'll filter these values out.
 9. Now that we've established what types of data preparation is required we'll take the appropriate actions. To filter the irrelevant columns we'll add a column filter to the canvas. To do so, in the operators field search for 'column filter', drag it onto the canvas and connect it with the join node. In the configuration of the node select all except for the 'description' and 'internal' columns.
 
-![alt_text](images/image20.png "image_tooltip")
+<!--![alt_text](images/image20.png "image_tooltip")-->
+<img src=images/image20.png width="50%">
 
-![alt_text](images/image39.png "image_tooltip")
+<!--![alt_text](images/image39.png "image_tooltip")-->
+<img src=images/image39.png width="50%">
 
 10. To filter out the incorrect 'credit amount' values we'll introduce a row filter. To do so, search for the 'row filter' operator, drag it onto the canvas, connect it to the column filter and define the filter where 'credit_amount'  should be greater than 0.
 
