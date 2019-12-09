@@ -167,13 +167,16 @@ Next click on 'Run' to execute this workflow.
 
 10. To filter out the incorrect 'credit amount' values we'll introduce a row filter. To do so, search for the 'row filter' operator, drag it onto the canvas, connect it to the column filter and define the filter where 'credit_amount'  should be greater than 0.
 
-![alt_text](images/image24.png "image_tooltip")
+<!--![alt_text](images/image24.png "image_tooltip")-->
+<img src=images/image24.png width="80%">
 
-![alt_text](images/image29.png "image_tooltip")
+<!--![alt_text](images/image29.png "image_tooltip")-->
+<img src=images/image29.png width="80%">
 
 In the 'Row Filter' configuration window set the option to Store the Results to 'true'. 
 
-![alt_text](images/image3.png "image_tooltip")
+<!--![alt_text](images/image3.png "image_tooltip")-->
+<img src=images/image3.png width="30%">
 
 11. Next run your workflow. Once finished save the workflow and add comment; 'Initial flow with data prep completed'.
 12. Now close your workflow and navigate to the overview page of your workspace.
@@ -187,23 +190,28 @@ At this stage in the project we will build 3 different data science models. Afte
 
 1. As we're entering a different stage of our project please update the stage of your workspace to the stage 'model'. Like we did in the previous chapter you can change this by clicking on 'update stage' in the overview tab of our workspace and for stage select 'Model'.
 
-![alt_text](images/image30.png "image_tooltip")
+<!--![alt_text](images/image30.png "image_tooltip")-->
+<img src=images/image30.png width="50%">
 
 2. In order to train our data science models we'll apply the train/test concept. This means that we'll split the data into 2 sets. A training set (typically 80% of the data) and a testing set (20%). The idea is to use the training set to train the data science model and use the test set to validate the accurateness of the model. 
 
 To do so, reopen your workflow and click on 'Open Flow' to be able to change it. Next on the operators tab search for 'random' and drag the 'Random Sampling' operator onto the canvas and connect it to the 'row filter' node.
 
-![alt_text](images/image32.png "image_tooltip")
+<!--![alt_text](images/image32.png "image_tooltip")-->
+<img src=images/image32.png width="100%">
 
 3. Open the 'Random Sampling' operator by double clicking it. Specify 2 for 'Number of Samples', Sample by 'Percentage' and 'Define Sample Sizes': 80% and 20%. Click ok to close
 4. In the operators tab search for 'sample selector' and drag 2 'sample selector' nodes on the canvas. Connect both of them to 'Random Sampling' and rename 1 to 'Test Data' and the other one to 'Train Data'.  For the Train Data select the 80% sample size. For Test data select the 20% sample size. 
 5. Save your model and provide comment; 'train test applied'. 
 
-![alt_text](images/image22.png "image_tooltip")
+<!--![alt_text](images/image22.png "image_tooltip")-->
+<img src=images/image22.png width="100%">
 
-![alt_text](images/image38.png "image_tooltip")
+<!--![alt_text](images/image38.png "image_tooltip")-->
+<img src=images/image38.png width="30%">
 
-![alt_text](images/image1.png "image_tooltip")
+<!--![alt_text](images/image1.png "image_tooltip")-->
+<img src=images/image1.png width="31%">
 
 **[What happened]**
 At this point you've splitted the dataset into 2 groups with random data. A test set and a training set. The reason for doing so it that we'll use the Training Data set to train our ML models. We deliberately set apart some data (the Test Data set) which we will not use to train our model. Since we have not used the data in the test set for model training, we use these records to validate our model results with the 'answers' in our test data set. 
@@ -217,11 +225,13 @@ Let's move on to introduce various ML operators to find our best predictive mode
 
 7. Link the operators to the 'Train Data' node and configure the model nodes with 'Dependent Column': 'class' (which contains the values good or bad) and for 'Select Columns': 'All columns'.
 
-![alt_text](images/image7.png "image_tooltip")
+<!--![alt_text](images/image7.png "image_tooltip")-->
+<img src=images/image7.png width="40%">
 
 8. This should result in the following flow: 
 
-![alt_text](images/image14.png "image_tooltip")
+<!--![alt_text](images/image14.png "image_tooltip")-->
+<img src=images/image14.png width="100%">
 
 In order to assess the quality of these models we'll introduce 2 model validation operators. The ROC operator and the Confusion Matrix operator. We use these operators since they will help us assess the performance of the models and select the winning model.
 
@@ -232,7 +242,8 @@ In order to assess the quality of these models we'll introduce 2 model validatio
     4. Test Data
 10. For the configuration of the ROC node specify the following value to predict: 'bad' 
 
-![alt_text](images/image36.png "image_tooltip")
+<!--![alt_text](images/image36.png "image_tooltip")-->
+<img src=images/image36.png width="40%">
 
 11. Next search for 'Confusion matrix' in the operators tab, select the confusion matrix operator to the canvas and connect the following nodes to the confusion matrix operator. 
     1. Alpine Forest Classification
@@ -241,7 +252,8 @@ In order to assess the quality of these models we'll introduce 2 model validatio
     4. Test Data
 12. Your flow should look like this: 
 
-![alt_text](images/image25.png "image_tooltip")
+<!--![alt_text](images/image25.png "image_tooltip")-->
+<img src=images/image25.png width="100%">
 
 13. Save your flow and specify for comments; 'model building'.
 14. Run your flow and wait for it to complete its execution.
@@ -252,8 +264,8 @@ In your flow you've split your data into a train and test set in order to be abl
 When your flow finished executing we can assess the model quality by clicking on the ROC node. \
 After doing so you should see the following graph in the results section:
 
-![alt_text](images/image10.png "image_tooltip")
-
+<!--![alt_text](images/image10.png "image_tooltip")-->
+<img src=images/image10.png width="100%">
 
 <details>
 <summary>
@@ -273,13 +285,15 @@ Click here to learn more about Confusion Matrices
 The confusion matrix is another tool that that can be used to assess model quality. The confusion matrix shows you a 2x2 matrix that shows how many of the observed values are correctly predicted by the model. This accurateness is then expressed as the Model Accuracy metric.
 </details>
 
-![alt_text](images/image5.png "image_tooltip")
+<!--![alt_text](images/image5.png "image_tooltip")-->
+<img src=images/image5.png width="100%">
 
 There are a couple of ways to improve the quality of your models. 1 way is to re-evaluate which columns you use to train your model. When you click on the Gradient Boosting Classifcation node and open the results you can click on the variable importance. This gives you a list of with relative importance of the columns used for building the model. This means that apparently the 'checking_status' is a very important column when assessing if someone will default on their loan. What we see as well is that the column 'id_credit_data_historicalcsv' also plays a significant role in the model construction while this column is simply the id of the loan request. 
 
 Therefore we might be able to improve the model quality if we don't involve this column while training the model.
 
-![alt_text](images/image34.png "image_tooltip")
+<!--![alt_text](images/image34.png "image_tooltip")-->
+<img src=images/image34.png width="100%">
 
 In order to do this, open the column operators and for independent columns uncheck the id columns ('id_credit_data_historicalcsv' and 'id_credit_personal_datacsv'). Do the same for the other models and re-run the workflow. Does this have a positive effect on your model quality? 
 
@@ -287,7 +301,9 @@ Now that you've found your best performing model we'll export it. Such that we c
 
 To do so, look for the export operator in the operator panel and add it the canvas. Now connect it to your best performing model. In the configuration specify the name: 'winner_model'. 
 
-![alt_text](images/image9.png "image_tooltip")
+<!--![alt_text](images/image9.png "image_tooltip")-->
+<img src=images/image9.png width="40%">
+
 
 Now run your model again. This stored a new file; winner_model in the workfiles of your workspace. Next save your workflow. Specify for comments: 'model building and evaluation completed.' Close you workfile and return to the overview tab of your workspace.
 
@@ -296,33 +312,37 @@ Now run your model again. This stored a new file; winner_model in the workfiles 
 At this stage in our project we've completed training our predictive model. Now it's time to apply it to new loan requests for which we don't know the answer yet. 
 
 1. As we're entering a different stage of our project please update the stage of your workspace to the stage 'deploy'. Like we did in the previous chapter you can change this by clicking on 'update stage' in the overview tab of our workspace and for stage select 'Deploy'.
-
-![alt_text](images/image13.png "image_tooltip")
+<!--![alt_text](images/image13.png "image_tooltip")-->
+<img src=images/image13.png width="60%">
 
 2. Next go to the 'Work files' tab and select 'Create new Workflow. Name the workflow '[Your name] Score Requests' and select 'Hadoop' for Data Source.
 
-![alt_text](images/image26.png "image_tooltip")
+<!--![alt_text](images/image26.png "image_tooltip")-->
+<img src=images/image26.png width="100%">
 
 3. On the data table look for the file 'credit_requests_new.csv' in the folder <_Hadoop, TS_TrainingDemo, Alain, TDSworkshop_> and drag it onto the canvas and validate the Hadoop file structure in the configuration of the node. Inspect the content of the 'credit_requests_new' file by running the workflow. Next you can see the content of the file by looking at the results. Please note that there are no columns in the file to tell us if this is a good / bad loan that is what we'll find out in the next steps.
 4. On the operators tab add the nodes 'Load Model' and 'Predictor'. Connect both the data file  and the Load Model nodes to the Predictor node. 
 
-![alt_text](images/image8.png "image_tooltip")
+<!--![alt_text](images/image8.png "image_tooltip")-->
+<img src=images/image8.png width="40%">
 
 Configure the 'Load Model' node to use the 'winner_model'.
 
-![alt_text](images/image18.png "image_tooltip")
+<!--![alt_text](images/image18.png "image_tooltip")-->
+<img src=images/image18.png width="40%">
 
 For the Predictor node, use the following configuration. Select yes for 'Store Results'. For 'Results Location' click on the choose file button. In the resulting window select the following path: <_TS_TrainingDemo, Alain, TDSworkshop_>. For 'Results Name' specify; @user_name
 
-![alt_text](images/image31.png "image_tooltip")
+<!--![alt_text](images/image31.png "image_tooltip")-->
+<img src=images/image31.png width="40%">
 
 Please run your flow and save it with the comments: 'scoring new loan requests.'. \
 After you has finished executing a new parquet file with your username as name will have been created in folder; <_TS_TrainingDemo, Alain, TDSworkshop_>. Inside the file will be the content of the file 'credit_requests_new.csv' with the prediction results appended as additional columns.
 
 To see the content of the file we'll add it to our workflow. To do so, go to the data tab and navigate to the folder; <_TS_TrainingDemo, Alain, TDSworkshop_>. Find a folder with your username and drag it onto the canvas. Next you can right click on the newly added node and select 'step run'. This will only execute this node. After it has finished running you can open the results. When you scroll to the right you can see the columns; 'PRED', 'CONF' and 'INFO'. These contain the prediction results and the confidence of the prediction.
 
-![alt_text](images/image23.png "image_tooltip")
-
+<!--![alt_text](images/image23.png "image_tooltip")-->
+<img src=images/image23.png width="100%">
 
 ### Export model for Real Time scoring
 
@@ -334,11 +354,13 @@ We're reaching the end of our data science project. We have a data science model
 4. As configuration select to export the model to a PMML or PFA format. 
 5. Save and Run your workfile.
 
-![alt_text](images/image28.png "image_tooltip")
+<!--![alt_text](images/image28.png "image_tooltip")-->
+<img src=images/image28.png width="100%">
 
 6. If you close your workfile you should find a new file in your workspace which is the exported PMML of PFA file. 
 
-![alt_text](images/image21.png "image_tooltip")
+<!--![alt_text](images/image21.png "image_tooltip")-->
+<img src=images/image21.png width="100%">
 
 ## Summary 
 
