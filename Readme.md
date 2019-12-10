@@ -107,7 +107,7 @@ At this moment you've performed the required steps to start your Data Science pr
 ### Task 2: Perform data preparation
 In this chapter you'll create a workfile (which will contains your data science workflow). In the workfile you'll introduce different data sources, join data, explore data and perform various data transformation to prepare the data for data science modelling.
 
-1. As we're entering a different stage in our project we're update the stage of our workspace to the 'transform' stage. This indicates that we're in the data transformation/data prep stage of our project. To do so, click on 'update stage' in the overview tab of our workspace. For stage select 'Transform'. 
+1. As we're entering a different stage in our project we're update the stage of our workspace to the 'transform' stage. We do this to communicate to our team that this project is entering a next stage of our project. To do so, click on 'update stage' in the overview tab of our workspace. For stage select 'Transform'. 
 
 <!--![alt_text](images/image33.png "image_tooltip")-->
 <img src=images/image33.png width="100%">
@@ -127,6 +127,8 @@ Name it ‘[Your name] Credit Worthiness’.
 <img src=images/image6.png width="100%">
 
 When the text under the node is in red, this means that the configuration of the node is incorrect. To fix this, double click on the node. This will open the configuration panel for the node on the right of the screen. You'll some options marked in yellow. This tells you that this is the place where some input form you is required. In this case, you'll need to validate if the Hadoop file structure has been parsed correctly. Please validate that the structure is ok before confirming. Also note that 1 of the last columns is called 'class'. This column tells us if the loan is good or bad. We'll be using this column as dependent column later.
+
+Note: Please note that if you're working on a Mac, you can use the tab key to navigate through your list of columns.
 
 Fix the other data source in the same manner. If done properly, the red text under the nodes will have turned black.
 
@@ -386,6 +388,8 @@ If you'd like to learn more about TIBCO Data Science please consult these resour
 [TIBCO Data Science Community](https://community.tibco.com/products/tibco-data-science)
 
 [TIBCO Community Data Science - Customer Orientation](https://community.tibco.com/wiki/tibcor-data-science-team-studio-customer-orientation)
+
+[TIBCO Data Science Youtube Channel with Video Instructions](https://youtu.be/kjwPaIQ4DZ4)
 
 Can't find the answer you're looking for?
 Then please contact your instructors:
