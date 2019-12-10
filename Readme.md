@@ -1,21 +1,6 @@
 # Workshop TIBCO Data Science
 
-[Table Of Contents]
-   * [Workshop TIBCO Data Science](#workshop-tibco-data-science)
-      * [Introduction](#introduction)
-         * [Authors](#authors)
-         * [Problem Statement](#problem-statement)
-      * [Lab Guide](#lab-guide)
-         * [Prepare your TIBCO Data Science Workspace](#prepare-your-tibco-data-science-workspace)
-         * [Perform data preparation](#perform-data-preparation)
-         * [Create various data science models](#create-various-data-science-models)
-         * [Apply the best predictive model to new loan requests](#apply-the-best-predictive-model-to-new-loan-requests)
-         * [Export model for Real Time scoring](#export-model-for-real-time-scoring)
-      * [Summary](#summary)
-      * [Additional Resources](#additional-resources)
-
-## Introduction
-
+## Lab Guide
 ### Authors
 [Steven van der Kroft](mailto:svanderk@tibco.com) \
 [Alain Martens](mailto:amartens@tibco.com)
@@ -32,6 +17,22 @@ Additional info can be found the TIBCO Community:
 [community.tibco.com](https://community.tibco.com/)
 
 </details>
+
+**Table Of Contents**
+   * [Workshop TIBCO Data Science](#workshop-tibco-data-science)
+      * [Introduction](#introduction)
+         * [Authors](#authors)
+         * [Problem Statement](#problem-statement)
+      * [Lab Guide](#lab-guide)
+         * [Prepare your TIBCO Data Science Workspace](#prepare-your-tibco-data-science-workspace)
+         * [Perform data preparation](#perform-data-preparation)
+         * [Create various data science models](#create-various-data-science-models)
+         * [Apply the best predictive model to new loan requests](#apply-the-best-predictive-model-to-new-loan-requests)
+         * [Export model for Real Time scoring](#export-model-for-real-time-scoring)
+      * [Summary](#summary)
+      * [Additional Resources](#additional-resources)
+
+## Introduction
 
 ### Problem Statement
 
@@ -62,8 +63,8 @@ Along the way we'll explore TIBCO Data Science and you'll get familiar with vari
 
 Good luck and feel free to ask any questions you might have along the way!
 
-## Lab Guide
-### Prepare your TIBCO Data Science Workspace
+## Guided Labs
+### Task 1: Prepare your TIBCO Data Science Workspace
 In this chapter you'll complete your user profile and prepare workspace to contain all the assets we'll create and use for our analytics project.
 
 1. Log in to [TIBCO Data Science](http://tstrainingdemo.tibco.com/) using the credentials that were provided to you by opening a browser and navigate to: [http://tstrainingdemo.tibco.com/](http://tstrainingdemo.tibco.com/)
@@ -80,7 +81,7 @@ In this chapter you'll complete your user profile and prepare workspace to conta
 4. Create a non-public Workspace named [Your name] Analytics Project.
 
 <!--![alt_text](images/image4.png "image_tooltip")-->
-<img src=images/image4.png width="50%">
+<img src=images/image4.png width="50%"> 
 
 <!--![alt_text](images/image27.png "image_tooltip")-->
 <img src=images/image27.png width="50%">
@@ -102,7 +103,7 @@ With this project we'll predict the creditworthiness of loan requests."
 **[What happened]** \
 At this moment you've performed the required steps to start your Data Science project. You've created a space for your project (a workspace), personalized it, invited (several) team member with which you can collaborate and added a description about your project. At this point you're all set to create the data science workflow. 
 
-### Perform data preparation
+### Task 2: Perform data preparation
 In this chapter you'll create a workfile (which will contains your data science workflow). In the workfile you'll introduce different data sources, join data, explore data and perform various data transformation to prepare the data for data science modelling.
 
 1. As we're entering a different stage in our project we're update the stage of our workspace to the 'transform' stage. This indicates that we're in the data transformation/data prep stage of our project. To do so, click on 'update stage' in the overview tab of our workspace. For stage select 'Transform'. 
@@ -184,7 +185,7 @@ In the 'Row Filter' configuration window set the option to Store the Results to 
 **[What happened]** \
 At this point we have successfully completed the data transformation stage of our project. We've joined data from 2 sources, we've analyzed the quality of our data with the summary statistics node and have introduced data transformation nodes to perform appropriate steps required before entering the modelling stage of our project.
 
-### Create various data science models 
+### Task 3: Create various data science models 
 
 At this stage in the project we will build 3 different data science models. After we've finished we'll analyse the predictive performance of these models.
 
@@ -307,7 +308,7 @@ To do so, look for the export operator in the operator panel and add it the canv
 
 Now run your model again. This stored a new file; winner_model in the workfiles of your workspace. Next save your workflow. Specify for comments: 'model building and evaluation completed.' Close you workfile and return to the overview tab of your workspace.
 
-### Apply the best predictive model to new loan requests
+### Task 4: Apply the best predictive model to new loan requests
 
 At this stage in our project we've completed training our predictive model. Now it's time to apply it to new loan requests for which we don't know the answer yet. 
 
@@ -344,7 +345,7 @@ To see the content of the file we'll add it to our workflow. To do so, go to the
 <!--![alt_text](images/image23.png "image_tooltip")-->
 <img src=images/image23.png width="100%">
 
-### Export model for Real Time scoring
+### Task 5: Export model for Real Time scoring
 
 We're reaching the end of our data science project. We have a data science model which we can use to perform batch predictions. We can however perform prediction in real time as well. In order to do that we need to export the model in a different format; A Predictive Model Markup Language (PMML) or Portable Format for Analytics (PFA). A PMML or PFA file can be use by TIBCO StreamBase to perform real time prediction on streaming data. Our last task will be to export our model as a PMML or PFA file. 
 
