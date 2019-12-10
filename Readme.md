@@ -374,6 +374,9 @@ Let's recap what we've done.
 
 Congratulations, you've now successfully completed all Labs!
 
+## Feedback
+Thank you for attending the TIBCO Data Science Workshop. We constantly like to improve our workshops. Therefore we kindly ask you to complete [this feedback form](https://forms.gle/dcW6GmZzAg5ysytE6).
+
 ## Additional Resources
 If you'd like to learn more about TIBCO Data Science please consult these resources: 
 
