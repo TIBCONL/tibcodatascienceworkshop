@@ -31,6 +31,7 @@ Additional info can be found the TIBCO Community:
          * [Task 4: Apply the best predictive model to new loan requests](#task-4-apply-the-best-predictive-model-to-new-loan-requests)
          * [Task 5: Export model for Real Time scoring](#task-5-export-model-for-real-time-scoring)
       * [Summary](#summary)
+      * [Feedback](#feedback)
       * [Additional Resources](#additional-resources)
 ## Introduction
 
