@@ -19,7 +19,19 @@ Additional info can be found the TIBCO Community:
 </details>
 
 **Table Of Contents**
-
+   * [Workshop TIBCO Data Science](#workshop-tibco-data-science)
+      * [Lab Guide](#lab-guide)
+         * [Authors](#authors)
+      * [Introduction](#introduction)
+         * [Problem Statement](#problem-statement)
+      * [Guided Labs](#guided-labs)
+         * [Task 1: Prepare your TIBCO Data Science Workspace](#task-1-prepare-your-tibco-data-science-workspace)
+         * [Task 2: Perform data preparation](#task-2-perform-data-preparation)
+         * [Task 3: Create various data science models](#task-3-create-various-data-science-models)
+         * [Task 4: Apply the best predictive model to new loan requests](#task-4-apply-the-best-predictive-model-to-new-loan-requests)
+         * [Task 5: Export model for Real Time scoring](#task-5-export-model-for-real-time-scoring)
+      * [Summary](#summary)
+      * [Additional Resources](#additional-resources)
 ## Introduction
 
 ### Problem Statement
