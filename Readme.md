@@ -37,7 +37,7 @@ Additional info can be found the TIBCO Community:
 
 ### Problem Statement
 
-You work as a citizen data scientist for an insurance company called Augment Insurance. Augment Insurance sells home loans. The company wants to offer loans to people that are creditworthy to mitigate it's risk by determining if an applicant will default on its loan. The challenge is that the company has a hard time determining who to offer a loan and who's loan request should be rejected.
+You work as a citizen data scientist for an insurance company called Predict Insurance. Predict Insurance sells home loans. The company wants to offer loans to people that are creditworthy to mitigate it's risk by determining if an applicant will default on its loan. The challenge is that the company has a hard time determining who to offer a loan and who's loan request should be rejected.
 
 For this reason your manager asked you if you can automate this decision making process. \
  \
@@ -95,7 +95,7 @@ In this chapter you'll complete your user profile and prepare workspace to conta
 7. In the summary box fill in a description of your project and upload an image to personalize your workspace.
 
 For example: \
-"This project is for Augment Insurance.
+"This project is for Predict Insurance.
 With this project we'll predict the creditworthiness of loan requests."
 
 <!--![alt_text](images/image35.png "image_tooltip")-->
