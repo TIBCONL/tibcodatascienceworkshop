@@ -391,6 +391,10 @@ If you'd like to learn more about TIBCO Data Science please consult these resour
 
 [TIBCO Data Science Youtube Channel with Video Instructions](https://youtu.be/kjwPaIQ4DZ4)
 
+[TIBCO Data Science in operations - Demos](https://community.tibco.com/wiki/ai-demand-data-science-operations)
+
+[Closed Loop Continuous Learning with TIBCO](https://www.tibco.com/resources/technical-case-study/closed-loop-continuous-learning-tibco-dynamic-online-pricing)
+
 Can't find the answer you're looking for?
 Then please contact your instructors:
 
