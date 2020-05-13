@@ -385,9 +385,7 @@ If you'd like to learn more about TIBCO Data Science please consult these resour
 
 [TIBCO Data Science Website](https://www.tibco.com/products/data-science)
 
-[TIBCO Data Science Community](https://community.tibco.com/products/tibco-data-science)
-
-[TIBCO Community Data Science - Customer Orientation](https://community.tibco.com/wiki/tibcor-data-science-team-studio-customer-orientation)
+[TIBCO Community Data Science Enablement Hub](https://community.tibco.com/wiki/tibcor-data-science-team-studio-enablement-hub)
 
 [TIBCO Data Science Youtube Channel with Video Instructions](https://youtu.be/kjwPaIQ4DZ4)
 
