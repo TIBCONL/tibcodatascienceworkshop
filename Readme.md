@@ -68,7 +68,7 @@ Good luck and feel free to ask any questions you might have along the way!
 ### Task 1: Prepare your TIBCO Data Science Workspace
 In this chapter you'll complete your user profile and prepare workspace to contain all the assets we'll create and use for our analytics project.
 
-1. Log in to [TIBCO Data Science](http://tstrainingdemo.tibco.com/) using the credentials that were provided to you by opening a browser and navigate to: [http://tstrainingdemo.tibco.com/](http://tstrainingdemo.tibco.com/)
+1. Log in to [TIBCO Data Science](https://tstrainingdemo.tibco.com/) using the credentials that were provided to you by opening a browser and navigate to: [https://tstrainingdemo.tibco.com/](https://tstrainingdemo.tibco.com/)
 2. Click on the gear icon in the upper right corner of the home page and customize the page layout by selecting and reordering widgets.
 
 <!--![alt_text](images/image19.png "image tooltip")-->
