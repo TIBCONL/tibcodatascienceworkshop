@@ -68,7 +68,7 @@ Good luck and feel free to ask any questions you might have along the way!
 ### Task 1: Prepare your TIBCO Data Science Workspace
 In this chapter you'll complete your user profile and prepare workspace to contain all the assets we'll create and use for our analytics project.
 
-1. Log in to [TIBCO Data Science](https://tstrainingdemo.tibco.com/) using the credentials that were provided to you by opening a browser and navigate to: [https://tstrainingdemo.tibco.com/](https://tstrainingdemo.tibco.com/)
+1. Log in to [TIBCO Data Science](http://partnerstsdemo.tibco.com/) using the credentials that were provided to you by opening a browser and navigate to: [http://partnerstsdemo.tibco.com/](http://partnerstsdemo.tibco.com/)
 2. Click on the gear icon in the upper right corner of the home page and customize the page layout by selecting and reordering widgets.
 
 <!--![alt_text](images/image19.png "image tooltip")-->
@@ -121,7 +121,7 @@ Name it ‘[Your name] Credit Worthiness’.
 <!--![alt_text](images/image12.png "image_tooltip")-->
 <img src=images/image12.png width="100%">
 
-3. We're now about to add our data to the data science project. Our source data in contained in 2 different files. We have data about historical credit requests and personal data about the requestors. For these loans we know if the requests are good or bad in terms of credit worthiness. So, to start open your workflow, go to the Data tab (on the left sidebar). Click on Data Sources and navigate to <_Hadoop, TS_TrainingDemo, Alain, TDSworkshop_> and drag the file called  'credit_data_historical.csv' on the canvas. Do the same for the file 'credit_personal_data.csv'
+3. We're now about to add our data to the data science project. Our source data in contained in 2 different files. We have data about historical credit requests and personal data about the requestors. For these loans we know if the requests are good or bad in terms of credit worthiness. So, to start open your workflow, go to the Data tab (on the left sidebar). Click on Data Sources and navigate to <_Hadoop, TS_PartnersDemo, Alain> and drag the file called  'credit_data_historical.csv' on the canvas. Do the same for the file 'credit_personal_data.csv'
 
 <!--![alt_text](images/image6.png "image_tooltip")-->
 <img src=images/image6.png width="100%">
