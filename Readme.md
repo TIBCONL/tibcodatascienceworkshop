@@ -324,7 +324,7 @@ At this stage in our project we've completed training our predictive model. Now 
 <!--![alt_text](images/image26.png "image_tooltip")-->
 <img src=images/image26.png width="100%">
 
-3. On the data table look for the file 'credit_requests_new.csv' in the folder <_Hadoop, TS_TrainingDemo, Alain, TDSworkshop_> and drag it onto the canvas and validate the Hadoop file structure in the configuration of the node. Inspect the content of the 'credit_requests_new' file by running the workflow. Next you can see the content of the file by looking at the results. Please note that there are no columns in the file to tell us if this is a good / bad loan that is what we'll find out in the next steps.
+3. On the data table look for the file 'credit_requests_new.csv' in the folder <_Hadoop, TS_PartnersDemo, Alain> and drag it onto the canvas and validate the Hadoop file structure in the configuration of the node. Inspect the content of the 'credit_requests_new' file by running the workflow. Next you can see the content of the file by looking at the results. Please note that there are no columns in the file to tell us if this is a good / bad loan that is what we'll find out in the next steps.
 4. On the operators tab add the nodes 'Load Model' and 'Predictor'. Connect both the data file  and the Load Model nodes to the Predictor node. 
 
 <!--![alt_text](images/image8.png "image_tooltip")-->
@@ -335,15 +335,15 @@ Configure the 'Load Model' node to use the 'winner_model'.
 <!--![alt_text](images/image18.png "image_tooltip")-->
 <img src=images/image18.png width="40%">
 
-For the Predictor node, use the following configuration. Select yes for 'Store Results'. For 'Results Location' click on the choose file button. In the resulting window select the following path: <_TS_TrainingDemo, Alain, TDSworkshop_>. For 'Results Name' specify; @user_name
+For the Predictor node, use the following configuration. Select yes for 'Store Results'. For 'Results Location' click on the choose file button. In the resulting window select the following path: <_TS_PartnersDemo, Alain_>. For 'Results Name' specify; @user_name
 
 <!--![alt_text](images/image31.png "image_tooltip")-->
 <img src=images/image31.png width="40%">
 
 Please run your flow and save it with the comments: 'scoring new loan requests.'. \
-After you has finished executing a new parquet file with your username as name will have been created in folder; <_TS_TrainingDemo, Alain, TDSworkshop_>. Inside the file will be the content of the file 'credit_requests_new.csv' with the prediction results appended as additional columns.
+After you has finished executing a new parquet file with your username as name will have been created in folder; <_TS_PartnersDemo, Alain_>. Inside the file will be the content of the file 'credit_requests_new.csv' with the prediction results appended as additional columns.
 
-To see the content of the file we'll add it to our workflow. To do so, go to the data tab and navigate to the folder; <_TS_TrainingDemo, Alain, TDSworkshop_>. Find a folder with your username and drag it onto the canvas. Next you can right click on the newly added node and select 'step run'. This will only execute this node. After it has finished running you can open the results. When you scroll to the right you can see the columns; 'PRED', 'CONF' and 'INFO'. These contain the prediction results and the confidence of the prediction.
+To see the content of the file we'll add it to our workflow. To do so, go to the data tab and navigate to the folder; <_TS_PartnersDemo, Alain_>. Find a folder with your username and drag it onto the canvas. Next you can right click on the newly added node and select 'step run'. This will only execute this node. After it has finished running you can open the results. When you scroll to the right you can see the columns; 'PRED', 'CONF' and 'INFO'. These contain the prediction results and the confidence of the prediction.
 
 <!--![alt_text](images/image23.png "image_tooltip")-->
 <img src=images/image23.png width="100%">
